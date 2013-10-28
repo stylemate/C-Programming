@@ -4,16 +4,16 @@ void main ()
 {
 	float length, width;
 	
-	printf("Enter the length of the rectangle: \n");
+	printf("직사각형의 길이를 입력하세요: \n");
 	
 	while (scanf("%f", &length) == 1)
 	{
-		printf("Length = %0.2f: \n", length);
-		printf("Enter its width: \n");
+		printf("길이 = %0.2f: \n", length);
+		printf("넓이를 입력하세요: \n");
 		if (scanf("%f", &width) != 1)
 			break;
-		printf("Width = %0.2f: \n", width);
-		printf("Area = %0.2f: \n", length * width);
-		printf("Enter the length of the rectangle: \n");
+		printf("넓이 = %0.2f: \n", width);
+		printf("평방면적 = %0.2f: \n", length * width);
+		printf("직사각형의 길이를 입력하세요: \n");
 	}
 }
