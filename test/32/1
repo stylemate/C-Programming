@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main()
+{
+	char input;
+
+	printf("====MENU====\n");
+	printf("A. Insert\n");
+	printf("B. Update\n");
+	printf("C. Find\n");
+	printf("D. Exit\n");
+	scanf("%s" input);
+
+	switch (input)
+	{
+		case 'A':
+			printf("==> Choice Menu: A. Insert\n");
+		case 'B':
+			printf("==> Choice Menu: B. Update\n");
+		case 'C':
+			printf("==> Choice Menu: C. Find\n");
+		default:
+			printf("Good Bye T^T\n");
+		break;
+	}	
+}

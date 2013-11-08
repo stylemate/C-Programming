@@ -1,15 +1,20 @@
 #include <stdio.h>
 
-int global;
-
 void main()
 {
-	int local;
-	global = 1;
-	local = 2;
+	int line, space, height, input, width, i = 0;
+	printf("input line count:");
+	scanf("%d", &input);
+	
+
+	printf("\n");
+	for(height = input; height > 0; height--)
 	{
-		int very_local;
-		very_local = global + local;
-		printf("%d", very_local);
+		i++;
+		for(space = 0; space < i; space++)
+			printf(" ");
+		for(width = input; width > 0; width--)
+			printf("*");
+		printf("\n");
 	}
 }
