@@ -4,7 +4,7 @@ void main(int argc, char *argv[])
 {
 	FILE* fp;
 	char ch;
-	if (argc < 2)
+	if (argc < 2 || argc > 2)
 	{
 		printf("usage: ./32_viewer filename\n");
 		exit(1);
